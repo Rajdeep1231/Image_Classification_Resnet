@@ -5,10 +5,10 @@ import streamlit as st
 import torch
 import pickle
 from PIL import Image
-from io import BytesIO
-import ssl
+#from io import BytesIO
+#import ssl
 
-ssl._create_default_https_context = ssl._create_unverified_context
+#ssl._create_default_https_context = ssl._create_unverified_context
 
 def predict(image_path):
     resnet = models.resnet101(pretrained=True)
@@ -60,7 +60,7 @@ def main():
 
         #st.write(max_item)
         #st.write(str(scores))
-        st.subheader('Most Likely, the image should be the ' +str(max_item) + '.')
+        st.subheader('Most Likely, the image contain a  ' +str(max_item) + '.')
 
 if __name__ == '__main__':
      main()

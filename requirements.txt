@@ -4,6 +4,6 @@ scikit-learn==0.22.1
 matplotlib>=1.4.3
 pandas>=0.19
 streamlit
-https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl
-https://download.pytorch.org/whl/cpu/torchvision-0.3.0-cp37-cp37m linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torch-1.0.0-cp37-cp37m-linux_x86_64.whl
+torchvision==0.2.1
 Pillow

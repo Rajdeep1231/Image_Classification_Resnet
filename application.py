@@ -39,7 +39,7 @@ def main():
     st.set_option('deprecation.showfileUploaderEncoding', False)
     st.title('Image Detection Algorithm')
     st.subheader("Let us tell you what that image is")
-    file_up = st.file_uploader("Upload a single image, only JPEG", type="jpeg")
+    file_up = st.file_uploader("Upload a single image, only JPEG", type=["jpeg",'jpg'])
     if file_up:
         image = Image.open(file_up)
         st.image(image, caption='Uploaded Image.', use_column_width=True)
